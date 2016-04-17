@@ -30,7 +30,7 @@ controller.hears(['hello', 'hi'], ['direct_mention'], function (bot, message) {
   bot.reply(message, 'Hello.')
 })
 
-controller.hears(['william'], ['direct_message'], function (bot, message) {
+controller.hears(['william'], ['direct_message', 'direct_mention'], function (bot, message) {
   bot.reply(message, 'William contact info:')
   bot.reply(message, '610.428.3973')
 })
